@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uz">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Payme To'lov Tugmasi</title>
+        <style>
+            .payme-button {
+                display: inline-block;
+                padding: 12px 24px;
+                font-size: 16px;
+                font-family: Arial, sans-serif;
+                color: #fff;
+                background-color: #00a86b; /* Payme yashil rangi */
+                border: none;
+                border-radius: 5px;
+                text-decoration: none;
+                text-align: center;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+            .payme-button:hover {
+                background-color: #008c5a;
+            }
+            .payme-button img {
+                vertical-align: middle;
+                margin-right: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="POST" action="https://checkout.paycom.uz">
+            <input type="hidden" name="merchant" value="68481c1670e3dcbc596ca07b" />
+
+            <input type="hidden" name="amount" value="1600" />
+
+            <input type="hidden" name="account[order_id]" value="1" />
+
+            <input type="hidden" name="lang" value="ru" />
+
+            <input type="hidden" name="callback" value="http://localhost:5173/uz/cabinet/orders" />
+
+            <!-- Таймаут после успешного платежа в миллисекундах. 
+         Значение по умолчанию 15
+         После успешной оплаты, по истечении времени callback_timeout
+         производится перенаправление пользователя по url возврата после платежа -->
+            <input type="hidden" name="callback_timeout" value="120000" />
+
+            <!-- Описание платежа
+         Для описания платежа доступны 3 языка: узбекский, русский, английский. 
+         Для описания платежа на нескольких языках следует использовать 
+         несколько полей с атрибутом  name="description[{lang}]"
+         lang может принимать значения ru|en|uz -->
+            <input type="hidden" name="description" value="alskdmaslkmdaskm" />
+
+            <!-- Объект детализации платежа
+         Поле для детального описания платежа, например, перечисления 
+         купленных товаров, стоимости доставки, скидки. 
+         Значение поля (value) — JSON-строка закодированная в BASE64 -->
+            <input
+                type="hidden"
+                name="detail"
+                value="bT02ODQ4MWMxNjcwZTNkY2JjNTk2Y2EwN2I7YWMub3JkZXJfaWQ9MTthPTE2MDA=" />
+            <!-- ================================================================== -->
+
+            <button type="submit">Оплатить с помощью <b>Payme</b></button>
+        </form>
+    </body>
+</html>

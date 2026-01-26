@@ -1,0 +1,36 @@
+.mySwiperAnnouncement {
+  width: 100%;
+  height: 600px;
+  border-radius: 16px;
+}
+
+.mySwiperAnnouncement .swiper-slide {
+  
+  background-position: center;
+  background-size: cover;
+}
+
+.mySwiperAnnouncement .swiper-slide img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+@media(max-width: 1024px) {
+  .mySwiperAnnouncement {
+  height: 500px;
+}
+
+}
+@media(max-width: 768px) {
+  .mySwiperAnnouncement {
+  height: 400px;
+}
+
+}
+@media(max-width: 640px) {
+  .mySwiperAnnouncement {
+  height: 300px;
+}
+
+}

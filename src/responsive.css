@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+@layer components {
+    @media (max-width: 1440px) {
+        .container {
+            max-width: none !important;
+            padding: 0 20px;
+            width: 100%;
+            /* padding-inline: 4%; */
+        }
+    }
+    @media (max-width: 1080px) {
+        section {
+            @apply py-14;
+        }
+        .section-container {
+        }
+    }
+    @media (max-width: 768px) {
+        .section-container {
+            @apply container;
+        }
+    }
+    @media (max-width: 640px) {
+        section {
+            @apply py-10;
+        }
+    }
+    @media (max-width: 500px) {
+        .section-container {
+            @apply p-3;
+        }
+    }
+}
