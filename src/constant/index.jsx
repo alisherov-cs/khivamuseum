@@ -368,7 +368,7 @@ export const employees = [
     fullName: "Ibragimov Adilbek G'aipnazarovich",
     birthday: "01.07.1964",
     nation: "O'zbek",
-    role: "\"Ichan - Qal'a\" davlat muzey qo'riqxonasi bo'lim direktori",
+    role: "\"Ichan - Qal'a\" davlat muzey qo'riqxonasi direktori",
     image: "/employees/adilbek.png",
   },
   {
@@ -396,3 +396,4 @@ export const employees = [
     image: "/employees/rustam.png",
   },
 ];
+
