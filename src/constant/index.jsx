@@ -16,7 +16,7 @@ import PaymentInternationalForm from "../components/parts/form/payment_internati
 export const COLORS = tailwindConfig.theme.extend.colors;
 
 export const SITE_DATA = {
-  title: "Khiva Museum",
+  title: "Xiva davlat muzey qo'riqxonasi",
   web_title: "khivamuseum.uz",
   web_url: "https://khivamuseum.uz",
   map_title: "Xorazm, Xiva shahri",
@@ -396,4 +396,3 @@ export const employees = [
     image: "/employees/rustam.png",
   },
 ];
-
