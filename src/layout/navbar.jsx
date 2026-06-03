@@ -130,9 +130,9 @@ export default function Navbar({ open, setOpen }) {
                             className="lg:hidden flex pl-5 cursor-pointer"
                         >
                              <div className="flex flex-col gap-1.5">
-    <div className="h-0.5 w-6 rounded bg-gray-800" />
-    <div className="h-0.5 w-6 rounded bg-gray-800" />
-    <div className="h-0.5 w-6 rounded bg-gray-800" />
+    <div className="h-0.5 w-6 rounded bg-primary" />
+    <div className="h-0.5 w-6 rounded bg-primary" />
+    <div className="h-0.5 w-6 rounded bg-primary" />
   </div>
                         </div>
                     </div>
